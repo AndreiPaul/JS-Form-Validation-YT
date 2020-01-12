@@ -16,8 +16,9 @@
 
         <h3>Please sign up ^_^ </h3>
         <div class="row">
-
-            <form class="col s6" id="myForm">
+            <form class="col s6" id="myForm" novalidate> <!--pui novalidate la form pt ca HTML 5 sa nu mai faca validarea lui 
+                (ex: la email iti apare un popup daca nu pui @), asta se va face din js.
+            -->
                 <div class="row">
                     <div class="input-field col s6">
                         <!--de vazut col s6 (size 6 ) ca pe bootstrap ish-->
@@ -31,7 +32,27 @@
                         <span class="helper-text"></span>
                     </div>
                 </div>
-
+                <div class="row">
+                    <div class="input-field col s6">
+                        <!--de vazut col s6 (size 6 ) ca pe bootstrap ish-->
+                        <label for="password">Password</label>
+                        <input type="password" name="Password" id="password">
+                        <span class="helper-text"></span>
+                    </div>
+                    <div class="input-field col s6">
+                        <label for="confirmPassword"> Confirm Password</label>
+                        <input type="password" name="Confirm Password" id="confirmPassword">
+                        <span class="helper-text"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <label for="email">Email</label>
+                        <input type="email" name="Email" id="email">
+                        <span class="helper-text"></span>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit">SignUp</button>
             </form>
             <div class="col s6">
                 <img src="https://cdn.pixabay.com/photo/2017/11/21/16/42/art-2968627_960_720.jpg">
